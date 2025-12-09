@@ -1,0 +1,18 @@
+# IDE and OS specific
+.idea/
+.vscode/
+*.DS_Store
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Build and temporary files
+/backend/output/
+/backend/temp/
+/nanobanana-output/

@@ -1,0 +1,68 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* 
+  The ThemeProvider will apply one of these classes to the body.
+  Tailwind's config is set up to use the CSS variables defined here.
+*/
+body {
+  /* Smooth transition for theme changes */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.theme-light {
+  --bg-main: #f0f2f5;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --text-primary: #1c1c1e;
+  --text-secondary: #6b7280;
+  --accent: #007aff;
+  --accent-dark: #0056b3;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --error: #ff3b30;
+}
+
+.theme-dark {
+  --bg-main: #1c1c1e;
+  --bg-card: rgba(44, 44, 46, 0.7);
+  --text-primary: #ffffff;
+  --text-secondary: #8e8e93;
+  --accent: #0a84ff;
+  --accent-dark: #005ecb;
+  --border-color: rgba(255, 255, 255, 0.15);
+  --error: #ff453a;
+}
+
+.theme-neon {
+  --bg-main: #0d011a;
+  --bg-card: rgba(26, 13, 46, 0.6);
+  --text-primary: #f0f0ff;
+  --text-secondary: #a095b7;
+  --accent: #00c6ff;
+  --accent-dark: #8a3ffc;
+  --border-color: rgba(0, 198, 255, 0.3);
+  --error: #ff3b30;
+}
+
+.theme-glass {
+  /* This theme relies heavily on the background component showing through */
+  --bg-main: #0a0a14; /* Fallback, should be overridden by BG component */
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent: #ffffff;
+  --accent-dark: #e0e0e0;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --error: #ff453a;
+}
+
+.theme-amoled {
+  --bg-main: #000000;
+  --bg-card: #121212;
+  --text-primary: #e5e5e5;
+  --text-secondary: #707070;
+  --accent: #00c6ff;
+  --accent-dark: #9333ea;
+  --border-color: #272727;
+  --error: #cf6679;
+}
